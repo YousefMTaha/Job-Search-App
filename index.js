@@ -1,0 +1,11 @@
+// import express from "express";
+// import { initApp } from "./src/initApp.js";
+import path from "path";
+import { config } from "dotenv";
+config({ path: path.resolve("./config/.env") });
+// const app = express();
+// const port = process.env.PORT || 3000;
+// initApp(app, express);
+console.log(path.resolve("./config/.env"));
+console.log(process.env.SALT_ROUND);
+// app.listen(port, () => console.log(`Example app listening on port ${port}!`));
